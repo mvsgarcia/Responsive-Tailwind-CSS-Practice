@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Website</title>
+    <title>SampleTech</title>
 
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> <!-- tailwind css cdn -->
 </head>
@@ -18,7 +18,7 @@
             <div class="flex items-center justify-between relative">
                 <div>
                     <a class="text-2xl font-bold text-gray-800 lg:text-3xl hover:text-gray-700 "
-                        href="#">Logo</a>
+                        href="#">SampleTech</a>
                 </div>
 
                 <div class="lg:hidden cursor-pointer" id="burger">
@@ -111,13 +111,14 @@
         
         
         <!--================================== CARDS SECTION ==================================-->
-        <div class="bg-yellow-100 grid items-center justify-center py-5">
+        <div class="bg-white items-center justify-center py-5">
         
             <h1 class="flex items-center justify-center mt-6 text-2xl font-bold text-gray-900 sm:mt-8 sm:text-4xl lg:text-3xl xl:text-4xl">
                 What's New?</h1>
-            <div class="px-8 py-12 flex space-x-10">
+
+            <div class="grid lg:grid-cols-3 px-8 py-12 gap-10">
                 <!-- Card 1 -->
-                <div class="max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md">
+                <div class="max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md transition duration-500 ease-in-out transform hover:shadow-2xl">
                     <img class="object-cover w-full h-64"
                         src="https://images.unsplash.com/photo-1622586757007-efda9475c347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                         alt="Article">
@@ -148,7 +149,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md">
+                <div class="max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md transition duration-500 ease-in-out transform hover:shadow-2xl">
                     <img class="object-cover w-full h-64"
                         src="https://images.unsplash.com/photo-1612831455359-970e23a1e4e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=925&q=80"
                         alt="Article">
@@ -180,7 +181,7 @@
 
 
                 <!-- Card 3 -->
-                <div class="max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md">
+                <div class="max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md transition duration-500 ease-in-out transform hover:shadow-2xl">
                     <img class="object-cover w-full h-64"
                         src="https://images.unsplash.com/photo-1554474051-0256b98c36f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                         alt="Article">
@@ -215,6 +216,17 @@
         </div> <!-- End of Cards -->
 
     </main>
+
+
+    <!--================================== FOOTER ==================================-->
+
+    <footer class="bg-gray-100 pt-5 pb-2 grid">
+        
+        <p class="text-center text-gray-500">© Brand 2020 - All rights reserved</p>
+
+        <hr class="h-px my-6 bg-gray-300 border-none">
+        
+    </footer> <!-- End of Footer -->
     
 
 
