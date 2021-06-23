@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Website</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-300">
+
+    <!--================================== NAVIGATION BAR ==================================-->
+    <nav class="px-6 py-4 shadow relative bg-white">
+        <div class="lg:items-center lg:justify-between lg:flex relative">
+            <div class="flex items-center justify-between relative">
+                <div>
+                    <a class="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300"
+                        href="#">Logo</a>
+                </div>
+
+                <div class="lg:hidden cursor-pointer" id="burger">
+
+                    <!-- Burger Menu Button -->
+                    <button type="button"
+                        class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                        aria-label="Toggle menu">
+                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                            <path
+                                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <!-- Dropdown Menu -->
+                    <ul class="absolute right-0 z-20 w-32 py-1 mt-2 overflow-hidden font-normal bg-white border rounded shadow lg:block hidden"
+                        id="menu">
+
+                        <li>
+                            <a href="#"
+                                class="flex text-sm items-center px-3 py-3 hover:bg-gray-900 hover:text-gray-100 hover:font-medium">
+                                Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex text-sm items-center px-3 py-3 hover:bg-gray-900 hover:text-gray-100 hover:font-medium">
+                                About </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex text-sm items-center px-3 py-3 hover:bg-gray-900 hover:text-gray-100 hover:font-medium">
+                                Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- Navigation Menu -->
+            <div class="flex flex-col mt-2 -mx-2 lg:mt-0 lg:flex-row lg:block hidden">
+                <a href="#"
+                    class="px-2 py-2 text-gray-800 rounded-md text-sm hover:bg-gray-900 hover:text-gray-100 hover:font-medium lg:mx-2">Home</a>
+                <a href="#"
+                    class="px-2 py-2 text-gray-800 rounded-md text-sm hover:bg-gray-900 hover:text-gray-100 hover:font-medium lg:mx-2">About</a>
+                <a href="#"
+                    class="px-2 py-2 text-gray-800 rounded-md text-sm hover:bg-gray-900 hover:text-gray-100 hover:font-medium lg:mx-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--================================== CONTENTS ==================================-->
+    <div class="bg-gray-100 grid lg:grid-cols-2 2xl:grid-cols-5">
+
+        <!--================================== HERO SECTION ==================================-->
+        <div class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:px-12 lg:py-24 lg:max-w-full xl:mr-0 2xl:col-span-2">
+           
+           <!-- Hero Contents -->
+            <div class="xl:max-w-xl">
+
+                <img class="mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-64 sm:w-full sm:object-cover object-center lg:hidden"
+                    src="image1.webp" alt="Macbook, iPhone, and earphones" />
+                <h1 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-8 sm:text-4xl lg:text-3xl xl:text-4xl">
+                    Lorem ipsum dolor.
+                    <br class="hidden lg:inline" />
+                    <span class="text-blue-500">Proin a augue eu ligula</span>
+                </h1>
+                <p class="mt-2 text-gray-600 sm:mt-4 sm:text-xl">
+                    Aenean eget libero scelerisque, venenatis magna vel, facilisis nibh. Nunc placerat venenatis elit viverra vestibulum.
+                    Aenean in elit sed nulla gravida viverra at sit amet tortor.
+                </p>
+                <div class="mt-4 sm:mt-6">
+                    <a class="inline-block px-5 py-3 rounded-lg transform transition bg-blue-500 hover:bg-blue-400 hover:-translate-y-0.5 focus:ring-blue-500 focus:ring-opacity-50 focus:outline-none focus:ring focus:ring-offset-2 active:bg-blue-600 uppercase tracking-wider font-semibold text-sm text-white shadow-lg sm:text-base"
+                        href="#">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hidden relative lg:block 2xl:col-span-3">
+            <img class="absolute inset-0 w-full h-full object-cover object-center" src="image1.webp" alt="Macbook,
+                iPhone, and earphones" />
+        </div>
+    </div>
+
+
+<!--================================== JS SCRIPT ==================================-->
+<script src="index.js"></script>
+
+</body>
+
+</html>
